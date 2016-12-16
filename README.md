@@ -11,7 +11,9 @@ the new class syntax.
 
 ## Results
 
-```
+```bash
+# with MOcov
+$ octave --no-gui --eval "runtests true"
 failure: parse error near line 1 of file /tmp/oct-QJBT47/AClass.m
 
   syntax error
@@ -25,4 +27,13 @@ failure: parse error near line 1 of file /tmp/oct-QJBT47/AClass.m
 
 FAILED (failure=1)
 ans = 0
+
+# without MOcov
+$ octave --no-gui --eval runtests
+suite: 1 tests
+hello world!.
+--------------------------------------------------
+
+OK
+ans =  1
 ```
