@@ -4,5 +4,5 @@ end
 
 function test_one
   aObject = AClass();
-  assert(isa(aObject, AClass));
+  assert(isa(aObject, 'AClass'));
 end
